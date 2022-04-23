@@ -1,0 +1,67 @@
+:root {
+    --as-color-white: #fff;
+    --as-color-dark: #29384e;
+    --as-color-gray: #546071;
+    --as-color-soft: #a9afb8;
+    --as-color-blue: #1069f5;
+    --as-color-blue-soft: #e0efff;
+    --as-color-blue-active: #c3daf1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--as-color-white);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--as-color-dark);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    color: var(--as-color-dark);
+    text-decoration: none;
+    outline: none;
+}
+
+.as-container {
+    margin: 4rem auto;
+    max-width: 960px;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+@import "box-shadow";
+@import "border";
+@import "text-position";
+@import "button";
+@import "space";
+@import "font-size";
+@import "color";
+@import "flex";
+@import "image";
+@import "accordion";
+@import "gallery";
+@import "step";

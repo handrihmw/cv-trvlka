@@ -1,0 +1,33 @@
+.as-flex {
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+
+    &--md {
+        gap: 1rem;
+    }
+    
+    &--sm {
+        gap: 0.5rem;
+    }
+    
+    &--between {
+        align-self: start;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+    
+    &--start {
+        justify-content: space-start;
+    }
+    
+    &--column {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+}

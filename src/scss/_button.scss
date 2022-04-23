@@ -1,0 +1,14 @@
+.as-button {
+    background: var(--as-color-blue-soft);
+    border-radius: 2rem;
+    color: var(--as-color-blue);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.875rem 2rem;
+    text-align: center;
+
+    &:hover {
+        background: var(--as-color-blue-active);
+        color: var(--as-color-blue);
+    }
+}

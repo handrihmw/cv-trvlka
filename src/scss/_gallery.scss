@@ -1,0 +1,123 @@
+.as-gallery {
+    display: flex;
+    flex-direction: row;
+
+    &__row {
+        display: flex;
+        position: relative;
+    }
+
+    &__big {
+        box-shadow: 0 6px 5px rgb(17 26 104 / 20%);
+        border-radius: 1rem;
+        margin-right: 1rem;
+        width: 300px;
+        height: 522px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+
+        img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 1rem;
+            height: 100%;
+        }
+    }
+
+    &__square {
+        box-shadow: 0 6px 5px rgb(17 26 104 / 20%);
+        border-radius: 1rem;
+        width: 300px;
+        height: 250px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+
+        img {
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 1rem;
+        }
+
+        &:first-of-type {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__caption {
+        color: var(--as-color-white);
+        position: absolute;
+        bottom: 1.25rem;
+        left: 1rem;
+    }
+}
+
+.overlay {
+    color: var(--as-color-white);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    ul {
+        padding-left: 1rem;
+    }
+}
+
+.clean .overlay span:nth-child(1) {
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: coustard;
+    transform: translateX(-50%);
+}
+
+.clean .overlay span:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 17px;
+    transform: translateX(-50%);
+}
+
+.clean .overlay span:nth-child(3) {
+    height: 3px;
+    background-color: var(--as-color-dark);
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+
+.clean .overlay:hover {
+    opacity: 0.93;
+}
+
+.clean .overlay:hover span:nth-child(1) {
+    animation: slide 0.4s;
+}
+
+.clean .overlay:hover span:nth-child(2) {
+    animation: slide 0.7s;
+}
+
+.clean .overlay:hover span:nth-child(3) {
+    animation: line 0.5s forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

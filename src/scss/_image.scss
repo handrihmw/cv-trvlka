@@ -1,0 +1,28 @@
+.as-image {
+    height: auto;
+    width: 100%;
+
+    &--lg {
+        height: 6rem;
+        width: 6rem;
+    }
+    
+    &--md {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    &--sm {
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    &--xs {
+        height: 0.75rem;
+        width: 0.75rem;
+    }
+    
+    &--rounded {
+        border-radius: 50%;
+    }
+}

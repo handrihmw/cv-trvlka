@@ -1,0 +1,9 @@
+.as-box-shadow {
+    box-shadow: 0 6px 20px rgb(17 26 104 / 10%);
+
+    &--bottom {
+        -webkit-box-shadow: 0 8px 6px -6px rgb(17 26 104 / 10%);
+        -moz-box-shadow: 0 8px 6px -6px rgb(17 26 104 / 10%);
+            box-shadow: 0 8px 6px -6px rgb(17 26 104 / 10%);
+    }
+}

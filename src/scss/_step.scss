@@ -1,0 +1,51 @@
+.as-step ul {
+    padding-left: 1rem;
+}
+
+.as-step li {
+    display: flex;
+}
+
+.as-step time {
+    position: relative;
+    margin-top: 2.25rem;
+}
+
+.as-step time::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    border-radius: 50%;
+    background: var(--as-color-blue);
+    border: 1px var(--as-color-blue) solid;
+    width: .8em;
+    height: .8em;
+}
+
+.as-step .as-step__content {
+    padding: 0 1.5em 1.5em 1.5em;
+    position: relative;
+}
+
+.as-step .as-step__content::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    border-left: 1px dashed var(--as-color-blue);
+    top: 2.25rem;
+}
+
+.as-step .as-step__content--last::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    border-left: none;
+    top: 2.25rem;
+}
